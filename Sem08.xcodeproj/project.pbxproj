@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4282973CC38CBEE4996D345F /* Pods_Sem08.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0606B46C9170AAA7D64B9BB1 /* Pods_Sem08.framework */; };
 		984C36312B12A29400539A00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984C36302B12A29400539A00 /* AppDelegate.swift */; };
 		984C36332B12A29400539A00 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984C36322B12A29400539A00 /* SceneDelegate.swift */; };
 		984C36352B12A29400539A00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984C36342B12A29400539A00 /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0606B46C9170AAA7D64B9BB1 /* Pods_Sem08.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sem08.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9482C2019C729B3FA5F55EE3 /* Pods-Sem08.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sem08.release.xcconfig"; path = "Target Support Files/Pods-Sem08/Pods-Sem08.release.xcconfig"; sourceTree = "<group>"; };
 		984C362D2B12A29400539A00 /* Sem08.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sem08.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		984C36302B12A29400539A00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		984C36322B12A29400539A00 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		984C36392B12A2A300539A00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		984C363C2B12A2A300539A00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		984C363E2B12A2A300539A00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9CD82BEC1CDBB8C7EF11C30 /* Pods-Sem08.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sem08.debug.xcconfig"; path = "Target Support Files/Pods-Sem08/Pods-Sem08.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4282973CC38CBEE4996D345F /* Pods_Sem08.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5CC118B5FFD4664A84E41D30 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F9CD82BEC1CDBB8C7EF11C30 /* Pods-Sem08.debug.xcconfig */,
+				9482C2019C729B3FA5F55EE3 /* Pods-Sem08.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		60AE8E8FEA3C6692B0DB2D7E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0606B46C9170AAA7D64B9BB1 /* Pods_Sem08.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		984C36242B12A29300539A00 = {
 			isa = PBXGroup;
 			children = (
 				984C362F2B12A29400539A00 /* Sem08 */,
 				984C362E2B12A29400539A00 /* Products */,
+				5CC118B5FFD4664A84E41D30 /* Pods */,
+				60AE8E8FEA3C6692B0DB2D7E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 984C36412B12A2A300539A00 /* Build configuration list for PBXNativeTarget "Sem08" */;
 			buildPhases = (
+				3D32AC392EFAB16684A5ADC7 /* [CP] Check Pods Manifest.lock */,
 				984C36292B12A29400539A00 /* Sources */,
 				984C362A2B12A29400539A00 /* Frameworks */,
 				984C362B2B12A29400539A00 /* Resources */,
+				63FCC55DF6554D95685B4D09 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D32AC392EFAB16684A5ADC7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sem08-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63FCC55DF6554D95685B4D09 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sem08/Pods-Sem08-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sem08/Pods-Sem08-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sem08/Pods-Sem08-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		984C36292B12A29400539A00 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		984C36422B12A2A300539A00 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9CD82BEC1CDBB8C7EF11C30 /* Pods-Sem08.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +380,7 @@
 		};
 		984C36432B12A2A300539A00 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9482C2019C729B3FA5F55EE3 /* Pods-Sem08.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
